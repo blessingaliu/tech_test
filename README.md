@@ -15,3 +15,17 @@ git push -u origin main
 ```
 <br/>
 
+
+2. Set up folders 
+Create a subfolder called Exercises 
+```
+mkdir Exercises
+cd Exercises
+```
+Within Exercises folder, create a subfolder called FizzBuzz
+
+```
+mkdir FizzBuzz
+cd FizzBuzz
+touch step_one.py
+```
