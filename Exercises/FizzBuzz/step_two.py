@@ -21,6 +21,9 @@ for fizzbuzz in range(101):
     elif fizzbuzz % 5 and fizzbuzz % 7 == 0:
         print('BuzzBang')
         continue
+    elif fizzbuzz % 13 == 0:
+        print('Fezz')
+        continue
     elif fizzbuzz % 11 == 0:
         print('Bong')
         continue
