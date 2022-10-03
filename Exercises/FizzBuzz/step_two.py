@@ -40,12 +40,15 @@
 #         print(fizzbuzz, 'Try again')
 
 
+
 # Creating a range 0 to 100
 for i in range(1,101) :
     # initialize an empty string to concatenate values together 
     string = ""
-    if i % 3==0 : string+="Fizz"
-    if i % 5==0 : string+="Buzz"
-    if i % 7==0 : string+="Bang"
+    if i % 11==0 : string+="Bong" 
+    else :
+        if i % 3==0 : string+="Fizz"
+        if i % 5==0 : string+="Buzz"
+        if i % 7==0 : string+="Bang"
     if string == "" : print(i)
     else : print(string)
