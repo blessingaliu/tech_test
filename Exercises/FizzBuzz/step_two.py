@@ -9,8 +9,8 @@
 
 
 for fizzbuzz in range(101): 
-    if  fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0 and fizzbuzz % 7 == 0: 
-        print('FizzBuzz' + 'Bang')
+    if  fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0 and fizzbuzz % 7 and fizzbuzz & 11 == 0: 
+        print('Bong')
         continue
     elif fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
         print('FizzBuzz')
@@ -20,6 +20,9 @@ for fizzbuzz in range(101):
         continue
     elif fizzbuzz % 5 and fizzbuzz % 7 == 0:
         print('BuzzBang')
+        continue
+    elif fizzbuzz % 11 == 0:
+        print('Bong')
         continue
     elif fizzbuzz % 3 == 0:
         print('Fizz')
