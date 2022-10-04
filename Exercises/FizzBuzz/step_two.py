@@ -40,11 +40,8 @@
 #         print(fizzbuzz, 'Try again')
 
 
-
+# First attempt using strings 
 # Creating a range 0 to 100
-from re import S
-
-
 for i in range(1,101) :
     # initialize an empty string to concatenate values together 
     string = ""
@@ -59,7 +56,7 @@ for i in range(1,101) :
 
 # Alternative approach using lists 
 # Creating a range 0 to 300
-for i in range(1,300) :
+for i in range(1,301) :
     # initialize an empty list to add values 
     string = []
     if i % 11==0 : string.append("Bong") 
