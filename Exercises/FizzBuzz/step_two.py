@@ -42,6 +42,9 @@
 
 
 # Creating a range 0 to 100
+from re import S
+
+
 for i in range(1,101) :
     # initialize an empty string to concatenate values together 
     string = ""
@@ -68,5 +71,9 @@ for i in range(1,300) :
     if i % 3==0 and not i % 11==0: string.insert(0, "Fizz")
     if i % 5==0 and not i % 11==0: string.append("Buzz")
     if i % 7==0 and not i % 11==0: string.append("Bang")
+    # Divisible by 17, reverse the order
+    if i % 17==0: string=string[::-1]
+    # If list is empty then number 
     if string == [] : print(i)
+    # join string and print it 
     else : print("".join(string))
