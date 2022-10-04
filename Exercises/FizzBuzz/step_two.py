@@ -52,3 +52,22 @@ for i in range(1,101) :
         if i % 7==0 : string+="Bang"
     if string == "" : print(i)
     else : print(string)
+
+
+# Alternative approach using lists 
+# Creating a range 0 to 300
+for i in range(1,300) :
+    # initialize an empty list to add values 
+    string = []
+    # 11 has to be on its own so it goes first
+    if i % 11==0 : string.append("Bong") 
+    # Only 13 goes with 11 and it goes first (inserted at index 0)
+    if i % 13==0 and i % 11==0: string.insert(0,"Fezz")
+    # other statements
+    else:
+        if i % 13==0: string.insert(0,"Fezz")
+        if i % 3==0 and not i % 11==0: string.insert(0, "Fizz")
+        if i % 5==0 : string.append("Buzz")
+        if i % 7==0 : string.append("Bang")
+    if string == [] : print(i)
+    else : print("".join(string))
